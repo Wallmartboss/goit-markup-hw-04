@@ -57,7 +57,6 @@ body {
   margin: 0 auto;
 }
 .section:first-child {
-  /*background-color: #2e2f42;*/
   max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
