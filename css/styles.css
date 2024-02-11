@@ -44,11 +44,13 @@ body {
 .container-foot {
   display: flex;
   align-items: baseline;
-  padding: 100px 156px 100px 156px;
-  width: 1440px;
+  margin: 0 auto;
+   width: 1158px;
+  
+  
 }
 .section {
-  max-width: 1440px;
+ 
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -185,11 +187,12 @@ body {
   display: flex;
   justify-content: flex-end;
   gap: 40px;
-  margin-top: 18px;
-  margin-left: 332px;
+ 
+  
 }
 .addra {
   font-style: normal;
+  margin-left: auto;
 }
 .address-item {
   text-decoration: none;
@@ -208,8 +211,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #404bbf;
-  /* вище - неправильно, має бути color: #2e2f42; але так вимагає робот*/
+  color: #2e2f42;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -219,7 +221,11 @@ body {
 .nav-text:focus {
   color: #404bbf;
 }
-.nav-text::after {
+.nav-item:first-child .nav-text {
+  color: #404bbf;
+
+}
+ .nav-text::after {
   position: absolute;
   content: "";
   bottom: -1px;
@@ -232,12 +238,10 @@ body {
   transform: scale(0);
 }
 
-.nav-text:hover::after {
+.nav-item:first-child .nav-text::after {
   transform: scale(1);
 }
-.nav-text:focus::after {
-  transform: scale(1);
-}
+
 .addr-item {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -312,7 +316,6 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.2;
   color: #2e2f42;
-  padding-bottom: 8px;
   text-align: center;
   margin-bottom: 8px;
 }
@@ -357,7 +360,8 @@ body {
 }
 .foot {
   background: #2e2f42;
-  display: inline-block;
+  padding: 100px 0;
+  margin: 0 auto;
 }
 .foot-logo {
   display: inline-block;
