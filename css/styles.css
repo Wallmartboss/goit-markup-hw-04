@@ -54,6 +54,7 @@ body {
  
   padding-top: 120px;
   padding-bottom: 120px;
+  margin: 0 auto;
 }
 .section:first-child {
   /*background-color: #2e2f42;*/
